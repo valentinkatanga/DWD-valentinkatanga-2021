@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form checking</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+   
+</head>
+
+
+<body>
+   <form id="frmLogin">
+      <h1 class="form__title">Registreren</h1>
+
+      <div class="form__control ctrlName">
+          <label for="name">Naam: </label>
+          <input type="text" id="name" required />
+          <span class="message"></span>
+      </div>
+
+      <div class="form__control ctrlEmail">
+          <label for="email">Email: </label>
+          <input type="email" id="email" required />
+          <span class="message"></span>
+      </div>
+
+      <div class="form__control ctrlBirth">
+          <label for="birth">Geboortedatum: </label>
+          <input type="date" id="birth" required />
+          <span class="message"></span>
+      </div>
+
+      <div class="form__control ctrlProfile">
+          <label for="profile">Profiel: </label>
+          <select name="profile" id="profile">
+              <option value="">selecteer...</option>
+              <option value="opt1">option 1</option>
+              <option value="opt2">option 2</option>
+              <option value="opt3">option 3</option>
+          </select>
+          <span class="message"></span>
+      </div>
+
+      <div class="form__control ctrlGender">
+          <label>Geslacht: </label>
+          <div class="control__list" id="rbnsGender">
+              <label><input type="radio" name="gender"> man</label>
+              <label><input type="radio" name="gender"> vrouw</label>
+          </div>
+          <span class="message"></span>
+      </div>
+
+
+      <div class="form__control ctrlInterests">
+          <label>Interesses: </label>
+          <div class="control__list" id="chbsInterests">
+              <label><input type="checkbox"> programmeren</label>
+              <label><input type="checkbox"> netwerken</label>
+              <label><input type="checkbox"> business</label>
+          </div>
+
+          <span class="message"></span>
+      </div>
+      <input type="submit" value="Inloggen" />
+      
+   </form> 
+
+   <script src="scripts.js"></script>  
+</body>
+
+
+</html>

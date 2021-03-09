@@ -1,0 +1,27 @@
+body {
+    font-family: roboto;
+    font-size: 14px;
+}
+label {
+   width: 150px;
+}
+.form__title {
+   font-size: 20px;
+   font-weight: 300;
+   text-transform: uppercase;
+}
+.form__control {
+   display: flex;
+   flex-flow: row nowrap;
+   padding: 5px 0;
+}
+.control__list label {
+   display: block;
+}
+.message {
+   color: #900;
+   font-size:  smaller;
+   font-style: italic;
+   margin: 0 10px;
+   line-height: 1.6;
+}
