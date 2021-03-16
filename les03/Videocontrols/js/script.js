@@ -1,9 +1,12 @@
-var x = document.getElementById("amv"); 
+var amv = document.getElementById("amv"); 
 
 function playVid() { 
-  x.play(); 
+ amv.play(); 
 } 
 
 function pauseVid() { 
-  x.pause(); 
+  amv.pause(); 
 }
+function rewindVid() { 
+	document.getElementById("amv").load() 
+  }
