@@ -1,0 +1,18 @@
+body{
+	background-color:orange;
+}
+
+h1
+{
+	margin-left: 10px;
+}
+
+img
+{
+	margin-left: 150px;
+	width: 150px;
+}
+label
+{
+display: inline-block;
+}

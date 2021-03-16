@@ -1,7 +1,7 @@
 
 window.onload = ( () => {
 	const frmLogin = document.querySelector('#frmLogin');
-	const naam = frmLogin.querySelector('#name');
+	const name = frmLogin.querySelector('#name');
 	const emmail = frmLogin.querySelector('#email');
 	const birth = frmLogin.querySelector('#birth');
 	const profile = frmLogin.querySelector('#profile');
@@ -15,10 +15,13 @@ window.onload = ( () => {
 	
 	frmLogin.addEventListener('submit', function(e) 
 	{
-		if(naam.value.toString().trim().length === 0)
+		if(emmail.value == ' ' )
 		{ 
-			console.log("yo");
-			naamPw.innerHTML = 'naam ontbreekt?!';
+			emmail.innerHTML = 'email mag niet leeg zijn';
+		}
+		if(.value == ' ' )
+		{ 
+			emmail.innerHTML = 'email mag niet leeg zijn';
 		}
 	}
 	);

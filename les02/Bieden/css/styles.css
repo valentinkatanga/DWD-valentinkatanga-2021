@@ -1,3 +1,32 @@
 body{
 	background-color: blueviolet;
 }
+
+div
+{
+margin: 5px;	
+}
+div .bieder input
+{
+width:180px;
+}
+div .bod input
+{
+width:180px;
+}
+img 
+{
+	margin-left: 20px ;
+}
+.verzenden{
+	padding: 7px;
+}
+label{
+	display:inline-block;
+	font-size: 14px;
+	width: 100px;
+}
+#formulier
+{
+	margin-left: 20px;
+}

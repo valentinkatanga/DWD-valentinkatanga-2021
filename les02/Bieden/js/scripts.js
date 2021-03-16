@@ -1,29 +1,27 @@
 let Hbieder;
-let Hbod;
-Hbod = 0;
-const pagina = document.querySelector('#pagina')
+let Hbod=0;
 const formulier = document.querySelector('#formulier')
-const bieder = document.querySelector('#bieder')
-const message = document.querySelector('#message') 
-const bod = document.querySelector('#bod')
+const bericht = document.querySelector('#message') 
+const bieder = document.querySelector('#biedernaam')
+const bod = document.querySelector('#aantal')
 
 formulier.addEventListener('submit', function (e) 
 
 {
 e.preventDefault();
-message.innerHTML="Niemand heeft een gebod geplaatst"
 
-if (bod.value> Hbod)
+
+if (bod.value > Hbod)
 {
-Hbod = bod.value;
+Hbod = parseInt(bod.value);
 Hbieder = bieder.value;
-message.innerHTML = "bravo, u hebt de hoogste bod"
+bericht.innerHTML = "Bravo, u hebt de hoogste bod. Als niemand meer biedt, zal deze Zeldavaas van u zijn!"
 }
 
 
 else 
 {
-message.innerHTML = `sorry, ${Hbieder} heeft hogere bod `
+bericht.innerHTML = `Sorry, ${Hbieder} heeft hogere bod. Verzamel wat meer geld en kom terug :) `
 }
 	
 }

@@ -4,31 +4,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Document</title>
 </head>
 <body>
-<h1>Bestel je pizza</h1>
+	<h1>Bestel je pizza</h1>
 
-<div id="smaken">
-	<input type="radio" id="btn1" name="Smaak" value="">
+		<div id="smaken">
+			<form id="formulier">
+				<input type="radio" name="Smaak" value="Hawaii">Hawaii<br>
+				<input type="radio" name="Smaak" value="4 seizoenen">4 seizoenen <br>
+				<input type="radio" name="Smaak" value="Hot & Spicy">Hot & Spicy <br>
+			</form>
 
-	<label for="btn1">Hot & Spicy</label><br>
-	
-	
-	<input type="radio" id="btn2" name="Smaak" value="">
-	
-	<label for="btn2">4 seizoenen</label><br>
-	
-	
-	<input type="radio" id="btn3" name="Smaak" value="">
-	
-	<label for="btn3">Hawaii</label>
+			<img id='afbeeldingen' src="afbeeldingen/hawai.png" alt="">
 
-	<p id="keuze" ></p>
-	
-	
-</div>
+		</div>
 
+		<p id="keuze"></p>
+		<script src="js/scripts.js"></script>
 	
 </body>
 </html>
