@@ -19,17 +19,16 @@ thumbs.forEach(thn => {
 function slideShow(slideIdx){
    figBig.querySelector('img').src = thumbs[slideIdx].getAttribute('data-photo');
    figBig.querySelector('figcaption').innerHTML = thumbs[slideIdx].querySelector('img').alt;
-   thumbs[slideIdx].classList.add('current');
-   thumbs[slideIdx].classList.add('visited');
+
 }
 addEventListener('keydown',function(e){
    if(e.key.toLocaleLowerCase() == 'arrowleft' ){
-   thumbs[slideIdx].classList.remove('current');
-   slideIdx--;
-   }else
+      slideIndex--;
+   slideShow(slideIndex);
+   }
 
    if(e.key.toLocaleLowerCase() == 'arrowright' ){
-   thumbs[slideIdx].classList.remove('visited');
-   slideIdx++;
+      slideIndex++;
+   slideShow(slideIndex);
 }
 })

@@ -11,16 +11,28 @@
 
 
 
-<video id="amv">
-  <source  src="media/amv_dbz.mp4" type="video/mp4">
+<video poster="img/dbz.jpg" id="amv" width="500" height="300" >
+  <source  src="media/amv_dbz.mp4" type="video/mp4"  >
   
 </video><br>
 
 
+<p>
+	<button onclick="playVid()" type="button">Play Video</button>
+	<button onclick="pauseVid()" type="button">Pause Video</button> 
+	<button onclick="rewindVid()" type="button">Rewind Video</button>
+</p>	
+<p>
+<label for="sliderrange">volume: </label>
+	<input type="range" id="sliderrange" min="0" max="100" value="50"  >	
+	<label id="slider"></label>
+</p>
+<p id="checkBx" >
+	<input type="checkbox" id="verrassing" value="verrassing">
+	<label for="verrassing">verrassing</label>
+</p>
 
-<button onclick="playVid()" type="button">Play Video</button>
-<button onclick="pauseVid()" type="button">Pause Video</button> 
-<button onclick="rewindVid()" type="button">Rewind Video</button> 
+
 	
 	
 <script src="js/script.js"></script>
