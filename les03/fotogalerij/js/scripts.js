@@ -1,4 +1,4 @@
-const figBig = document.querySelector('#figBig');
+const figure = document.querySelector('#figure');
 const thumbs = document.querySelectorAll('.thumbs div');
 
 let slideIndex = 0;
@@ -11,14 +11,14 @@ thumbs.forEach(thn => {
       thn.classList.add('current');
       thn.classList.add('visited');
       // pas afbeelding en beschrijving aan
-      figBig.querySelector('img').src = thn.getAttribute('data-photo');
-      figBig.querySelector('figcaption').innerHTML = thn.querySelector('img').alt;
+      figure.querySelector('img').src = thn.getAttribute('data-photo');
+      figure.querySelector('figcaption').innerHTML = thn.querySelector('img').alt;
    });
 });
 
 function slideShow(slideIdx){
-   figBig.querySelector('img').src = thumbs[slideIdx].getAttribute('data-photo');
-   figBig.querySelector('figcaption').innerHTML = thumbs[slideIdx].querySelector('img').alt;
+   figure.querySelector('img').src = thumbs[slideIdx].getAttribute('data-photo');
+   figure.querySelector('figcaption').innerHTML = thumbs[slideIdx].querySelector('img').alt;
 
 }
 addEventListener('keydown',function(e){

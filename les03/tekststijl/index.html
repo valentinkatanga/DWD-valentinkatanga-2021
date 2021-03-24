@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekststijl</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div>
+        <form id="form">
+            <div class="lettergrootte">
+                <label for="sliderValue">Lettergrootte:</label>
+                <input type="range" id="sliderValue" min="10" max="20" value="1">
+                <label id="sliderResults"></label>
+            </div>
+
+            <div class="color">
+                <label for="color">Kleur: </label>
+                <input type="color" id="color">
+            </div>
+
+            <div id="stijlen">
+                <label>Stijlen: </label><br>
+
+                <input type="checkbox" id="cbxVet" value="bold">                
+                <label for="cbxVet">Vet </label><br>
+
+                <input type="checkbox" id="cbxSchuin" value="italic">
+                <label for="cbxSchuin">Schuin </label><br>
+
+                <input type="checkbox" id="cbxHoofdletters" value="uppercase">
+                <label for="cbxHoofdletters">Hoofdletters </label><br>
+            </div>
+
+            <div id="knoppen">
+                <button id="stijl1" value="shadow">Stijl 1</button>
+                <button id="stijl2" value="multiColor">Stijl 2</button>
+                <button id="stijl3" value="reverse">Stijl 3</button>
+            </div>
+
+            <div class="textbox">
+                <p id="textbox">
+                    Berserk is een Japanse mangaserie geschreven en geïllustreerd door Kentaro Miura. De manga verscheen in 1990 voor het eerst in het mangamagazine Young Animal, uitgegeven door Hakusensha. 
+                    Er zijn op het moment (2018) negenendertig volumes/tankōbons uitgebracht in Japan. De manga werd door uitgeverij Glénat deels vertaald in het Nederlands. 
+                    Waarschuwing: Berserk bevat duistere verhaallijnen, doorspekt met expliciet geweld en bloot. Kortom: de manga onderzoekt het beste en slechtste in de mens.
+                </p>
+            </div>
+
+        </form>
+
+    </div>
+    
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
