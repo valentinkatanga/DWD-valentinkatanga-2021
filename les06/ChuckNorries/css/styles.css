@@ -1,6 +1,34 @@
+body
+{
+  background-image: url(img/texas2.jpg);
+  background-repeat:no-repeat;
+  background-size:cover ;
+}
 img {
     border: 1px solid #ddd;
     border-radius: 50%;
     padding: 5px;
     width: 150px;
+    
+  }
+  blockquote {
+    background: cornflowerblue;
+    margin: 1.5em 10px;
+    padding: 0.5em 5px;
+ 
+  }
+  blockquote:before {
+    color:black;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+  }
+  blockquote::after{
+    content: close-quote;
+    color: black;
+    content: closed-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
   }

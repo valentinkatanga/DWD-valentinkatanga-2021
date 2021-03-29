@@ -1,6 +1,7 @@
 body 
 {
   background-image: url(image/onepiece2.jpg);
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: cover; 
   text-align: center;
 }
+
