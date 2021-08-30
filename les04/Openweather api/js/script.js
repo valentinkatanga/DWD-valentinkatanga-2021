@@ -1,20 +1,26 @@
-const link = 'https://api.openweathermap.org/data/2.5/weather?q=Geraardsbergen&appid=20ecdd02560183071f84d2ae4512dfdb&lang=nl&units=metric'
-const stad = document.querySelector('#stad')
-const temp = document.querySelector('#temperatuur')
-const weer = document.querySelector('#weer')
+const quote = document.querySelector('#weer')
 
 
-fetch(link)
-.then(response => {return response.json();})
-.then(data => verwerkData(data))
-.catch(err => verwerkFout(err))
-function verwerkData(data)
-{
-	stad.innerHTML =  data.name;
-	temp.innerHTML =  data.main.temp;
-	weer.innerHTML =  data.weather[0].description;
+let url = '"https://quotes15.p.rapidapi.com/quotes/random/"';
+let options = {
+    "headers": {
+        "x-rapidapi-key": "8c8007cea7msh4496df1616791c3p175918jsndd45fa655d98",
+        "x-rapidapi-host": "quotes15.p.rapidapi.com"
+    }
+};
+// fetch url
+fetch(url, options)
+    .then(resp => {
+        return resp.json();
+    })
+    .then(data => verwerkData(data))
+    .catch(err => verwerkFout(err));
+// verwerk fouten
+function verwerkFout(err) {
+    console.log('request mislukt: ', err);
 }
-function verwerkFout(err)
-{
-	console.log('request mislukt', err);
+
+function verwerkData(data) {
+		console.log('gelukt', data);
+		
 }

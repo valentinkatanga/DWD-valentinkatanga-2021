@@ -4,14 +4,17 @@ body
   background-repeat:no-repeat;
   background-size:cover ;
 }
-img {
-    border: 1px solid #ddd;
-    border-radius: 50%;
+img 
+  {
     padding: 5px;
-    width: 150px;
-    
+    width: 50px;    
   }
-  blockquote {
+
+
+    
+  
+  blockquote 
+  {
     background: cornflowerblue;
     margin: 1.5em 10px;
     padding: 0.5em 5px;

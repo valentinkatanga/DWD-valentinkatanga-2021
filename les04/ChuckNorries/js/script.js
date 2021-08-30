@@ -8,5 +8,16 @@ fetch(link)
 
 function verwerkData(data)
 {
-quote.innerHTML =  data.value;
+console.log('succes', data);
+console.log(data);
 }
+
+
+fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+quote.innerHTML =  data.value;
+  });

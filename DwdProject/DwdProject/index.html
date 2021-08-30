@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fbc5271e25.js" crossorigin="anonymous"></script>
+    <title>DWD | Dilmac Afrem</title>
+</head>
+
+<body>
+    <div class="options">
+        <div class="highscore">
+        </div>
+        <div class="container">
+            <button id="btnmute">Mute sound</button>
+            <button id="btnunmute">Unmute sound</button>
+            <button id="btnfullscreen">Full screen</button>
+            <p id="countdown">5:00</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1>Death note survival</h1>
+        <div class="about">
+            <h3>About game:</h3>
+            <p>You can choose between L or Light and have to fight Ryuk the god of death. If he catches you it is lost.
+                With your superpower, you can shoot lasers with your eyes.</p>
+                <div class="monster">
+                    <img src="img/ryuk.png" alt="Ryuk image">
+                    <img id="monsterhealth" src="GUI/full-life.png" alt="Full-life image">
+                </div>
+        </div>
+        <div class="wrap">
+            <h3>Keys to play the game</h3>
+            <p>Movement:</p>
+            <img class="keyboardarrows" src="img/movement.png" alt="keyboard arrows image" />
+            <p>Shoot:</p>
+            <img class="keyboardshoot" src="img/shootkey.png" alt="keyboard y key image" />
+            <div class="playerhealth">
+                <img id="avatarimg" src="img/L.png" alt="Avatar afbeelding">
+                <img id="playerhealth" src="GUI/full-life.png" alt="Full-life image">
+            </div>
+        </div>
+        <div class="loginstart">
+            <label id="username">username(optioneel): </label>
+            <input type="text" id="inpusername" value="">
+            <label id="avatar">avatar(optioneel):</label>
+            <input type="text" id="inpavatar" value="">
+            <button class="btngenerate">Generate Random</button>
+            <p>Choose character:</p>
+            <div class="choosecharacter">
+                <button id="btnleft" class="btncharacter"><i class="fas fa-arrow-left"></i></button>
+                <div id="figBig">
+                    <img id="character" src="img/character1.png" alt="random image">
+                </div>
+                <button id="btnright" class="btncharacter"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="thumbs">
+                <div data-photo="img/character1.png" class="current"><img src="img/character1.png" alt="Character 1">
+                </div>
+                <div data-photo="img/character2.png"><img src="img/character2.png" alt="Character 2"></div>
+            </div>
+            <p id="lblhelp">Please click on ready ! </p>
+            <button class="btnlogin" id="btnlogin">Ready</button>
+        </div>
+            <div class="canvasgame">
+                <canvas class="canvas1"></canvas>
+            </div>
+        <button id="btnplay" class="btnstart">Play Game</button>
+        <div class="gamestatus">       
+            <div class="slidecontainer">
+                <p>Sound:</p>
+                <input id="sldsize" type="range" min="0" max="100" value="50" class="slider">
+                <p id="lblpercentage">50%</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

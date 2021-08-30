@@ -1,0 +1,19 @@
+#canvas2
+{
+width: 1000px;
+height: 500px;
+border: 10px black;
+position: absolute;
+background: orange;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arial of the Dead</title>
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+	<h1>Arial of the Dead</h1>
+	<p id="intro">Iemand werd vermoord!? <br>
+		Het is aan jou om uit te zoeken wie de moordenaar is en hoe de moord gebeurde. Gebruik de pijl om de speler te dirogeren
+		en kom zo in contact met de clues. <br>
+		Vul de juiste antwoorden in en onthul de waarheid.
+	</p>
+
+	
+
+	<p id="indices">
+	</p>
+
+	<form id="answers">
+		<p>
+			<label>Dader:</label><br>
+			<label><input type="radio" name="dader" id="sanada" > Sanada</label><br>
+			<label><input type="radio" name="dader" >  Raïzo</label><br>
+			<label><input type="radio" name="dader" > Sakurana</label><br>
+			<label><input type="radio" name="dader" > Keiko</label>
+		  </p>
+		<p>
+			<label>Wapen:</label> <br>
+			<label><input type="radio" name="wapen" value="m" > Mes</label><br>
+			<label><input type="radio" name="wapen" value="v" id="vergif" > Vergif</label><br>
+			<label><input type="radio" name="wapen" value="b" > Basebalbat</label><br>
+			<label><input type="radio" name="wapen" value="p" > Pistool</label>
+		  </p>
+	  </form>
+	  <button id="btnReveal" onclick="reveal()">
+		REVEAL THE PLOT
+	  </button>
+	  <p>
+		  <textarea name="" id="answer" cols="30" rows="10"></textarea>
+		</p>
+		<p>
+			<textarea name="" id="bijbelvers" cols="30" rows="10"></textarea>
+		  </p>
+		<p>
+			Hier wat sfeermuziek om u de case te helpen oplossen
+
+		</p>
+		<audio src="music/ost.mp3" id="audio" controls>
+			<p>Hier wat sfeermuziek om u de case te helpen oplossen</p>
+			</audio>
+		<p>
+			<canvas id="canvas1"  ></canvas>	
+		</p>
+	<script src="js/script.js"></script>
+</body>
+</html>
+

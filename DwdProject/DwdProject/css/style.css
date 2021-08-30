@@ -1,0 +1,550 @@
+body,
+html {
+    background: linear-gradient(#960000, #000000);
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*Font family instellen*/
+@font-face {
+    font-family: deathnote;
+    src: url('../fonts/RyukExtra\ copy.ttf');
+}
+
+@font-face {
+    font-family: deatNoteTitle;
+    src: url('../fonts/death_font_ver1_0.ttf');
+}
+
+.about h3 {
+    color: black;
+    font-family: deatNoteTitle;
+}
+
+h1,
+h3 {
+    font-family: deatNoteTitle;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+.about {
+    margin: 0;
+    padding: 0;
+    max-width: 266px;
+    width: 100%;
+    float: left;
+    border-radius: 20%;
+    color: white;
+    font-size: 2rem;
+    font-family: deathNote;
+}
+
+.about p {
+    margin-bottom: 10rem;
+}
+
+#avatarimg {
+    margin-top: 12rem;
+}
+
+.highscore {
+    text-align: center;
+    width: 400px;
+    color: white;
+    border-radius: 20%;
+    overflow: auto;
+    font-family: deathNote;
+    font-size: 2rem;
+}
+
+.highscore h3 {
+    color: black;
+}
+
+
+.sidebar p {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.wrap h3 {
+    color: black;
+    margin-bottom: 0;
+}
+
+.wrap p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.keyboardshoot {
+    margin-bottom: 8rem;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 20%;
+    color: white;
+    float: right;
+}
+
+.keyboardarrows {
+    width: 50%;
+}
+
+.disapear {
+    display: none;
+}
+
+/*Login*/
+.loginstart {
+    border: 3px solid rgb(255, 255, 255);
+    width: 30rem;
+    margin: 0 auto;
+    border-radius: 5rem;
+    padding: 30px;
+    padding-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.loginstart input {
+    display: block;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+}
+
+#inpusername,
+#inpavatar {
+    border: 2px solid black;
+}
+
+#inpavatar {
+    margin-bottom: 10px;
+}
+
+#avatarimg {
+    width: 121px;
+    height: 121px;
+    margin-top: 16rem;
+}
+
+#character,
+#btnleft,
+#btnright {
+    margin-bottom: 1rem;
+}
+
+.btngenerate {
+    padding: 0px 20px;
+    color: white;
+    background-color: #960000;
+    font-family: Bungee;
+    border: 2px solid black;
+    border-radius: 6%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btngenerate:hover {
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+
+.login {
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    visibility: hidden;
+}
+
+#lblhelp {
+    margin-top: 0px;
+    color: #ffffff;
+    font-size: 22px
+}
+
+#character1,
+#character2 {
+    display: inline-block;
+}
+
+.loginstart p,
+.login p {
+    margin-bottom: 0px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.choosecharacter {
+    display: flex;
+    flex: space-between;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.btnlogin {
+    padding: 0px 20px;
+    color: white;
+    background-color: #960000;
+    font-size: 2rem;
+    font-family: deathNote;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Wrapper*/
+.wrapper {
+    text-align: center;
+    font-family: deathNote;
+    font-size: 2rem;
+}
+
+.wrapper h1 {
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.canvas1 {
+    width: 0px;
+    margin: 0 auto;
+    border: 2px black solid;
+    visibility: hidden;
+    justify-content: center;
+    border-radius: 5%;
+    margin-bottom: 13px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.gamestart {
+    max-width: 830px;
+    width: 100%;
+    height: 560px;
+    border: 2px black solid;
+    justify-content: center;
+    border-radius: 5%;
+    background-image: url(../img/Tileset.png);
+    margin-bottom: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.win {
+    background-image: url(../img/gameover.png);
+}
+
+.lose {
+    background-image: url(../img/gameover2.png);
+}
+
+
+/*Options*/
+.options {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.options button {
+    margin-right: 5px;
+    margin-top: 5px;
+    color: black;
+    font-family: deathNote;
+    font-size: 2rem;
+    border: 2px solid black;
+
+}
+
+.current {
+    background-color: gray;
+}
+
+/*Start game*/
+.btnstart {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: white;
+    font-family: deathNote;
+    font-size: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6%;
+}
+
+#character {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.thumbs {
+    display: none;
+}
+
+.btncharacter {
+    background-color: #960000;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.btncharacter:hover {
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.btnplay {
+    display: flex;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color: #960000;
+    color: white;
+    font-family: deathNote;
+    border: 2px solid black;
+    border-radius: 6%;
+
+}
+
+.btnplay:hover,
+.btnloginactivated:hover {
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+
+.btnstart:hover,
+.btnlogin:hover {
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+
+.options button:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+/*Sound*/
+#sldsize {
+    overflow: hidden;
+    width: 30%;
+}
+
+.gamestart,
+.gameover {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.slider {
+    background-color: #960000;
+    border: 2px solid black;
+    border-radius: 6%;
+}
+
+/*Timer*/
+#countdown {
+    font-family: deathNote;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-top: 2rem;
+    text-align: end;
+}
+
+.gamestatus {
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+
+}
+
+.slidecontainer {
+    flex-grow: 4;
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#playerhealth {
+    width: 280px;
+}
+
+@media screen and (max-width: 1650px) {
+    .about p {
+        margin-bottom: 12rem;
+    }
+
+    #avatarimg {
+        margin-top: 13rem;
+    }
+
+}
+
+@media screen and (max-width: 1410px) {
+    .gamestart {
+        width: 600px;
+        height: 360px;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #avatarimg {
+        margin-top: 13rem;
+    }
+
+    #monsterhealth {
+        width: 120%;
+    }
+
+    #playerhealth {
+        width: 120%;
+    }
+
+    .about p {
+        margin-bottom: 9rem;
+    }
+
+    #avatarimg {
+        margin-top: 10rem;
+    }
+
+    .loginstart {
+        width: 20rem;
+        font-size: 1rem;
+    }
+
+    .btnlogin {
+        font-size: 1.6rem;
+    }
+
+    #btnplay {
+        font-size: 1.6rem;
+    }
+
+    .options button {
+        font-size: 1.6rem;
+    }
+
+    #countdown {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper h1 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    .about p {
+        margin-bottom: 8.3rem;
+    }
+
+    .options {
+        justify-content: center;
+    }
+
+    .highscore {
+        width: 0px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .options {
+        justify-content: center;
+    }
+
+    .highscore {
+        width: 0px;
+    }
+
+    .loginstart {
+        width: 13rem;
+        font-size: 1rem;
+    }
+    .loginstart button{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media screen and (max-width: 620px) {
+
+.about p{
+    font-size: 19px;
+    margin-bottom: 3rem;
+}
+}
+@media screen and (max-width: 500px) {
+
+    .loginstart{
+        width: 30%;
+        height: 10%
+    }
+    .loginstart button, input{
+        width: 80%;
+        height: 50%;
+        font-size: 10px;
+    }
+    .keyboardshoot img{
+        margin-bottom: 20rem;
+    }
+    .options button {
+        display: block;
+        flex-flow: row nowrap;
+        text-align: center;
+        margin: 0.6rem;
+    }
+    }
